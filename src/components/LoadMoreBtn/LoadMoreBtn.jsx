@@ -1,6 +1,13 @@
+import s from "./LoadMoreBtn.module.css";
 
-export default function LoadMoreBtn() {
+const LoadMoreBtn = ({ onClick }) => {
   return (
-    <div>LoadMoreBtn</div>
-  )
-}
+    <>
+      <button className={s.loadBtn} onClick={onClick}>
+        Load more
+      </button>
+    </>
+  );
+};
+
+export default LoadMoreBtn;
