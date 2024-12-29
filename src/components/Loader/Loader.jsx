@@ -1,9 +1,9 @@
 import { RotatingLines } from "react-loader-spinner";
 
-export default function Loader() {
+export default function Loader({visible}) {
   return (
     <RotatingLines
-      visible={true}
+      visible={visible}
       height="96"
       width="96"
       color="grey"
