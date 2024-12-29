@@ -1,0 +1,32 @@
+.imageCard {
+  width: 100%;
+  height: 240px;
+}
+
+.linkItem {
+  width: 300px;
+  color: var(--black);
+}
+
+.discrBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.author {
+  text-transform: capitalize;
+}
+
+.userName{
+    font-weight: 500;
+    font-size: 18px    ;
+}
