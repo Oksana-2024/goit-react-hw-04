@@ -1,18 +1,9 @@
 import s from "./Header.module.css";
 
-export default function Header() {
+export default function Header({ children }) {
   return (
-    <div className={s.containerHeader}>
-      <form>
-        <input
-          type="text"
-          autoComplete="off"
-          autoFocus
-          placeholder="Search images and photos"
-        />
-        <button type="submit">Search</button>
-      </form>
-    </div>
+    <>
+      <header className={s.headerPage}> {children}</header>
+    </>
   );
 }
-
