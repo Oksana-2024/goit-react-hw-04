@@ -1,8 +1,6 @@
 :root {
   --black: #161919;
   --grey: #b8c0c0;
-  --purple:#c701f2;
-  --background-header: #00c5eb;
   --transition: ease;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -45,5 +43,4 @@ input {
 
 main {
   padding: 12px 24px;
-
 }
