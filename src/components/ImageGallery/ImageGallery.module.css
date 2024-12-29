@@ -1,0 +1,14 @@
+.galleryList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageItem {
+  width: 100%;
+  border: 1px solid var(--black);
+  box-shadow: 1px 1px var(--grey);
+}
