@@ -10,20 +10,20 @@ export default function ImageCard({
 }) {
   return (
     <>
-      <a
-        className={s.linkItem}
-        href={urls.regular}
-        onClick={(e) => onClick(e, { urls, alt_description })}
-      >
+      <a className={s.linkItem} href={urls.regular}>
         <img
           src={urls.small}
           alt={alt_description}
           width={300}
           className={s.imageCard}
+          onClick={(e) => onClick(e, { urls, alt_description })}
         />
         <div className={s.discrBox}>
           <div className={s.author}>
-            <p>Author: <span className={s.userName}>{user.name.toLowerCase()}</span></p>
+            <p>
+              Author:{" "}
+              <span className={s.userName}>{user.name.toLowerCase()}</span>
+            </p>
           </div>
           <div className={s.likes}>
             <FcLike />

@@ -20,18 +20,12 @@ function App() {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const query = form.query.value;
-
-    if (query.trim().length > 0) {
+  const handleSubmit = (query) => {
+    if (query.trim()) {
       setSearch(query);
       fetchImagesData(query);
-      form.reset();
       return;
     }
-    toast.error("Please enter search data.");
   };
 
   const fetchImagesData = async (query, page = 1) => {
