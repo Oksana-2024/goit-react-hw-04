@@ -3,17 +3,13 @@
   height: 240px;
 }
 
-.linkItem {
-  width: 300px;
-  color: var(--black);
-}
-
 .discrBox {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 12px;
+  color: var(--black);
 }
 
 .likes {
