@@ -63,10 +63,11 @@ function App() {
     setSelectedPhoto(item);
   };
 
-  const onLoadMore = () => {
+  const onLoadMore = async () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetchImagesData(search, nextPage);
+    await fetchImagesData(search, nextPage);
+    setTimeout(scrollBy.bind(null, { behavior: "smooth", top: 580 }), 50);
   };
 
   return (
