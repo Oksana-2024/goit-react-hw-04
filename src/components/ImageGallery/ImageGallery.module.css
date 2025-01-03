@@ -9,7 +9,7 @@
 }
 
 .imageItem {
-  width: 100%;
+  width: 362px;
   border: 1px solid var(--black);
   box-shadow: 1px 1px var(--grey);
 }
